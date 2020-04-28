@@ -1,0 +1,106 @@
+// General Styles
+
+html{
+    font-size:62.5%;
+}
+
+html, body{
+    font-family:@main-font;
+}
+
+h1, h2, h3{
+    font-family:@title-font;
+}
+
+h1{
+    font-size:6rem;
+    width:100%;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 4px black;
+}
+
+h3{
+    font-size:2.8rem;
+    letter-spacing: .2rem;
+    text-decoration: underline;
+}
+
+
+#welcome{
+    background-image: url("../img/welcome.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-bottom:.2rem solid white;
+    #title{
+        height:100%;
+        .flexBox(column, center);
+    }
+    h2{
+        font-size:2.8rem;
+    }
+}
+
+
+#mainInfo{
+    color:@secondary-color;
+    text-shadow: 2px 2px 4px black;
+    .feature{
+        h2{
+            font-size:3rem;
+            color:white;
+            text-shadow: 2px 2px 4px black;
+        }
+        width:45%;
+        font-size:2rem;
+        .flexBox(column, center);
+        .featurePic{
+            height:200px;
+        }   
+    }
+    .flexBox(row, space-around);
+}
+
+#bottomTitle{
+    height:100%;
+    font-size:2rem;
+    color: @secondary-color;
+    text-shadow: 2px 2px 4px black;
+    .flexBox(column, center);
+        p{
+           padding: 0rem 3rem;
+         }
+    }
+#list{
+    font-size:2.4rem;
+    width:60%;
+    list-style-position: inside;
+    color:@secondary-color;
+    text-shadow: 2px 2px 4px black;
+}
+#listSection{
+    h3{
+        text-align: center;
+        font-size: 5rem;
+        margin-top:2rem;
+        color:@secondary-color;
+        text-shadow: 2px 2px 4px black;
+        text-decoration: none;
+    }
+    img{
+        width:40%;
+    }
+}
+#listImg{
+    .flexBox(row, space-around)
+}
+
+#about{
+    text-align:center;
+    h1{
+        font-size:4rem;
+        margin-top:3rem;
+    }
+}

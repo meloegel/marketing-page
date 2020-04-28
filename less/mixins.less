@@ -1,0 +1,21 @@
+//Mixins
+
+.flexBox(@direction, @justify, @align:center){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items:@align;
+}
+
+.custom-btn (@font-color, @background-color) {
+    display:block;
+    color:@font-color;
+    background-color:@background-color;
+    margin: 0 1rem 2rem;
+    width:18rem;
+    font-size:1.4rem;
+    border-radius:1rem;
+    opacity:.6;
+    transition:.3s;
+}
+

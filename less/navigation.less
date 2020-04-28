@@ -1,0 +1,47 @@
+//Navagation Styles
+
+header{
+    h3{
+        margin:.8rem 0 0 .8rem;
+        border-radius: 25px;
+        border:1px solid black;
+        padding: .6rem;
+        background-color: @main-color;
+        color:white;
+    }
+    nav{
+        width:40%;
+        margin-right:2rem;
+        .flexBox(row, space-between);
+
+         a{
+        text-decoration: none;
+        font-size:2rem;
+        &:hover{
+            color: @secondary-color;
+            background: @main-color;
+            border-radius: 25px;
+            padding:.6rem;
+        }//closes hover
+    }//Closes a
+}//Closes nav
+}//closes header
+
+
+footer{
+    width:100%;
+    .flexBox(row-reverse, flex-start);
+    nav{
+        a{
+            margin-right:2rem;
+            text-decoration: none;
+            font-size:2rem;
+            color:white;
+            &:hover{
+                color:pink;
+                background:blue;
+            }//closes hover
+        }//closes A
+    }//closes nav
+
+}//closes footer

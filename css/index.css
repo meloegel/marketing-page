@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+table {
+  width: 90%;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5%;
+}
+body {
+  background-color: #2e5077;
+}
+button {
+  display: block;
+  color: black;
+  background-color: white;
+  margin: 0 1rem 2rem;
+  width: 18rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+li {
+  margin: 1rem;
+  list-style-type: circle;
+}
+th {
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: underline;
+}
+td {
+  color: #ffa630;
+  padding: 1rem 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "DM Serif Text", serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Marck Script", cursive;
+}
+h1 {
+  font-size: 6rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+h3 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+}
+#welcome {
+  background-image: url("../img/welcome.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 0.2rem solid white;
+}
+#welcome #title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome h2 {
+  font-size: 2.8rem;
+}
+#mainInfo {
+  color: #ffa630;
+  text-shadow: 2px 2px 4px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#mainInfo .feature {
+  width: 45%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mainInfo .feature h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+#mainInfo .feature .featurePic {
+  height: 200px;
+}
+#bottomTitle {
+  height: 100%;
+  font-size: 2rem;
+  color: #ffa630;
+  text-shadow: 2px 2px 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bottomTitle p {
+  padding: 0rem 3rem;
+}
+#list {
+  font-size: 2.4rem;
+  width: 60%;
+  list-style-position: inside;
+  color: #ffa630;
+  text-shadow: 2px 2px 4px black;
+}
+#listSection h3 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 2rem;
+  color: #ffa630;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: none;
+}
+#listSection img {
+  width: 40%;
+}
+#listImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#about {
+  text-align: center;
+}
+#about h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+header h3 {
+  margin: 0.8rem 0 0 0.8rem;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 0.6rem;
+  background-color: #2e5077;
+  color: white;
+}
+header nav {
+  width: 40%;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+header nav a:hover {
+  color: #ffa630;
+  background: #2e5077;
+  border-radius: 25px;
+  padding: 0.6rem;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer nav a {
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+footer nav a:hover {
+  color: pink;
+  background: blue;
+}
+footer {
+  border-top: 2px solid white;
+}
+footer h3 {
+  padding: 2rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+}
