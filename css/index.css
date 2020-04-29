@@ -134,9 +134,19 @@ table {
   font-size: 2.5rem;
   text-align: center;
   margin: 5%;
+  background-color: #2e5077;
+  border-radius: 2.5rem;
+}
+@media (max-width: 500px) {
+  table {
+    font-size: 1.5rem;
+  }
 }
 body {
   background-color: #2e5077;
+}
+#aboutBackground {
+  background-color: #3c699c;
 }
 button {
   display: block;
@@ -159,10 +169,44 @@ th {
   font-size: 3.5rem;
   text-shadow: 2px 2px 4px black;
   text-decoration: underline;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  th {
+    font-size: 1.8rem;
+  }
 }
 td {
   color: #ffa630;
+  text-shadow: 2px 2px 4px black;
   padding: 1rem 0;
+}
+address {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+#phone {
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  #contact h1 {
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 500px) {
+  #contact h3 {
+    margin: 2rem 0;
+  }
+}
+#contact img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 50%;
 }
 html {
   font-size: 62.5%;
@@ -203,6 +247,11 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #welcome #title {
+    height: 60%;
+  }
+}
 #welcome h2 {
   font-size: 2.8rem;
 }
@@ -222,13 +271,30 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+#mainInfo .feature p {
+  margin-bottom: 1rem;
+}
 #mainInfo .feature h2 {
   font-size: 3rem;
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 500px) {
+  #mainInfo .feature {
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+}
 #mainInfo .feature .featurePic {
   height: 200px;
+}
+@media (max-width: 500px) {
+  #mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #bottomTitle {
   height: 100%;
@@ -248,7 +314,13 @@ h3 {
   width: 60%;
   list-style-position: inside;
   color: #ffa630;
+  margin-left: 1.5rem;
   text-shadow: 2px 2px 4px black;
+}
+@media (max-width: 500px) {
+  #list {
+    width: 85%;
+  }
 }
 #listSection h3 {
   text-align: center;
@@ -261,11 +333,24 @@ h3 {
 #listSection img {
   width: 40%;
 }
+@media (max-width: 500px) {
+  #listSection img {
+    width: 100%;
+  }
+}
 #listImg {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  #listImg {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #about {
   text-align: center;
@@ -273,6 +358,33 @@ h3 {
 #about h1 {
   font-size: 4rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+#about h2 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: underline;
+}
+#about p {
+  font-size: 3rem;
+  color: #ffa630;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e5077;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+}
+@media (max-width: 500px) {
+  #about p {
+    width: 95%;
+    font-size: 2.5rem;
+  }
 }
 header {
   display: flex;
@@ -284,6 +396,14 @@ header a {
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header h3 {
   margin: 0.8rem 0 0 0.8rem;
   border-radius: 25px;
@@ -291,6 +411,11 @@ header h3 {
   padding: 0.6rem;
   background-color: #2e5077;
   color: white;
+}
+@media (max-width: 500px) {
+  header h3 {
+    margin: 1rem 1rem 1rem 0;
+  }
 }
 header nav {
   width: 40%;
@@ -300,9 +425,22 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header nav a {
   text-decoration: none;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin-bottom: 1rem;
+  }
 }
 header nav a:hover {
   color: #ffa630;
@@ -317,11 +455,33 @@ footer {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer nav a {
   margin-right: 2rem;
   text-decoration: none;
   font-size: 2rem;
   color: white;
+}
+@media (max-width: 500px) {
+  footer nav a {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 footer nav a:hover {
   color: pink;

@@ -1,6 +1,9 @@
 //Navagation Styles
 
 header{
+    @media @mobile{
+        .flexBox(column, center)
+    }
     h3{
         margin:.8rem 0 0 .8rem;
         border-radius: 25px;
@@ -8,15 +11,25 @@ header{
         padding: .6rem;
         background-color: @main-color;
         color:white;
+        @media @mobile{
+            margin:1rem 1rem 1rem 0;
+        }
+        
     }
     nav{
         width:40%;
         margin-right:2rem;
         .flexBox(row, space-between);
+        @media @mobile{
+            .flexBox(column, center)
+        }
 
          a{
         text-decoration: none;
         font-size:2rem;
+        @media @mobile{
+            margin-bottom:1rem;
+        }
         &:hover{
             color: @secondary-color;
             background: @main-color;
@@ -31,12 +44,22 @@ header{
 footer{
     width:100%;
     .flexBox(row-reverse, flex-start);
+    @media @mobile{
+        .flexBox(column, center)
+    }
     nav{
+        @media @mobile{
+            .flexBox(column, center);
+        }
         a{
             margin-right:2rem;
             text-decoration: none;
             font-size:2rem;
             color:white;
+            @media @mobile{
+                margin-right:0;
+                margin-bottom:1rem;
+            }
             &:hover{
                 color:pink;
                 background:blue;
