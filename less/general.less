@@ -77,13 +77,39 @@ h3{
 }
 
 #bottomTitle{
+    border-top: .2rem solid white;
     height:100%;
     font-size:2rem;
     color: @secondary-color;
     text-shadow: 2px 2px 4px black;
+    button{
+        color:white;
+        background-color: @secondary-color;
+    }
+    #img{
+        width:27%;
+        padding:2rem;
+        margin-left:auto;
+        margin-right:auto;
+        .flexBox(row, space-around);
+        @media @mobile{
+            .flexBox(column, center);
+            width:85%;
+        }
+       img{
+           padding:2rem;
+           border-radius: 2.5rem;
+           background-color: @main-color-lighten;
+           @media @mobile{
+            margin-bottom:1rem;
+           }
+       }
+    }
     .flexBox(column, center);
         p{
-           padding: 0rem 3rem;
+           padding: 1.2rem;
+           border-radius: 2.5rem;
+           background-color: @main-color-lighten;
          }
     }
 #list{
@@ -98,7 +124,10 @@ h3{
     }
 }
 #listSection{
+    
     h3{
+        border-top: .2rem solid white;
+        padding-top:2rem;
         text-align: center;
         font-size: 5rem;
         margin-top:2rem;
@@ -152,4 +181,7 @@ h3{
             font-size: 2.5rem;
         }
     }
+}
+#aboutTitle{
+    font-family: @title-font;
 }

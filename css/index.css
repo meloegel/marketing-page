@@ -156,8 +156,11 @@ button {
   width: 18rem;
   font-size: 1.4rem;
   border-radius: 1rem;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: 0.3s;
+  color: #ffa630;
+  background-color: #3c699c;
+  text-shadow: 2px 2px 4px black;
   margin-top: 1rem;
 }
 li {
@@ -180,6 +183,19 @@ td {
   color: #ffa630;
   text-shadow: 2px 2px 4px black;
   padding: 1rem 0;
+  font-size: 2rem;
+}
+td img {
+  width: 25%;
+}
+td a:visited {
+  color: #ffa630;
+}
+td .email {
+  font-size: 1.6rem;
+}
+td .links {
+  font-size: 1.6rem;
 }
 address {
   text-align: center;
@@ -297,6 +313,7 @@ h3 {
   }
 }
 #bottomTitle {
+  border-top: 0.2rem solid white;
   height: 100%;
   font-size: 2rem;
   color: #ffa630;
@@ -306,8 +323,43 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+#bottomTitle button {
+  color: white;
+  background-color: #ffa630;
+}
+#bottomTitle #img {
+  width: 27%;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #bottomTitle #img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+}
+#bottomTitle #img img {
+  padding: 2rem;
+  border-radius: 2.5rem;
+  background-color: #3c699c;
+}
+@media (max-width: 500px) {
+  #bottomTitle #img img {
+    margin-bottom: 1rem;
+  }
+}
 #bottomTitle p {
-  padding: 0rem 3rem;
+  padding: 1.2rem;
+  border-radius: 2.5rem;
+  background-color: #3c699c;
 }
 #list {
   font-size: 2.4rem;
@@ -323,6 +375,8 @@ h3 {
   }
 }
 #listSection h3 {
+  border-top: 0.2rem solid white;
+  padding-top: 2rem;
   text-align: center;
   font-size: 5rem;
   margin-top: 2rem;
@@ -385,6 +439,9 @@ h3 {
     width: 95%;
     font-size: 2.5rem;
   }
+}
+#aboutTitle {
+  font-family: "Marck Script", cursive;
 }
 header {
   display: flex;
