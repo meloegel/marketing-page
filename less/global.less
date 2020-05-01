@@ -1,0 +1,93 @@
+//global styles
+
+* {
+    box-sizing: border-box;
+    max-width:100%;
+    // border: .1rem solid gray;
+}
+table{
+    width:90%;
+    font-size:2.5rem;
+    text-align: center;
+    margin:5%;
+    background-color: @main-color;
+    border-radius: 2.5rem;
+    @media @mobile{
+        font-size:1.5rem;
+    }
+    
+}
+body{
+    background-color:@main-color;
+}
+#aboutBackground{
+    background-color: @main-color-lighten;
+}
+
+button{
+    .custom-btn(black, white);
+    margin-top:1rem;
+}
+li{
+    margin: 1rem;
+    list-style-type: circle;
+}
+th{
+    color:white;
+    font-size:3.5rem;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: underline;
+    padding:1rem;
+    @media @mobile{
+        font-size:1.8rem;
+    }
+}
+
+td{
+    color:@secondary-color;
+    text-shadow: 2px 2px 4px black;
+    padding: 1rem 0;
+    font-size:2rem;
+    img{
+        width:25%;  
+    }
+    a:visited {
+        color:@secondary-color;
+    }
+    .email{
+        font-size:1.6rem;
+    }
+    .links{
+        font-size:1.6rem;
+    }
+    
+}
+address{
+    text-align:center;
+    font-size:3rem;
+    color:white;
+}
+#phone{
+    text-align:center;
+    color:white;
+    padding: 2rem 0;
+}
+#contact{
+    h1{
+        @media @mobile{
+            margin: 2rem 0;
+        }    
+    }
+    h3{
+        @media @mobile{
+            margin: 2rem 0;
+        }  
+    }
+    img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2rem;
+    width:50%;
+}
+}
